@@ -1,0 +1,29 @@
+body {
+  color: white;
+}
+
+.form,
+.greeting {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgimg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  animation: fadeIn 1s linear;
+}

@@ -1,22 +1,32 @@
-<style>
-    body {
-        margin-top: 0px;
-    }
+<!DOCTYPE html>
+<html lang="en">
 
-    h1 {
-        border-bottom: 1px solid black;
-        padding: 10px;
-        margin-top: 0px;
-    }
-
-    span {
-        padding: 5px;
-    }
-</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
 
 <body>
-    <h1>Emotion</h1>
-    <span>SAD</span>
-    <span>HAPPY</span>
-    <span>LOVE</span>
+    <div class="js-clock">
+        <h1>00:00</h1>
+    </div>
+    <form class="js-form form">
+        <input type="text" placeholder="What is your name?" />
+    </form>
+    <h4 class="js-greeting greeting"></h4>
+    <form class="todoForm">
+        <input type="text" placeholder="Things to do" />
+    </form>
+    <ul class="js-todoList">
+    </ul>
+    <span class="js-weather"></span>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
 </body>
+
+</html>
